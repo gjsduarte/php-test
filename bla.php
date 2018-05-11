@@ -46,155 +46,155 @@ class PhpUnderControl_Example_Math
     /**
      * Adds the two given values.
      *
-     * @param integer $d1 Value one.
-     * @param integer $d2 Value two.
+     * @param integer $v1 Value one.
+     * @param integer $v2 Value two.
      *
      * @return integer.
      */
-    public function add($d1, $d2)
+    public function add($v1, $v2)
     {
-        return ($d1 + $d2);
+        return ($v1 + $v2);
     }
 
     /**
      * Subtract param two from param one
      *
-     * @param integer $d1 Value one.
-     * @param integer $d2 Value two.
+     * @param integer $v1 Value one.
+     * @param integer $v2 Value two.
      *
      * @return integer.
      */
-    public function sub($d1, $d2)
+    public function sub($v1, $v2)
     {
-        return ($d1 - $d2);
+        return ($v1 - $v2);
     }
 
     /**
      * Not tested method that should be visible with low coverage.
      */
-    public function div($d1, $d2)
+    public function div($v1, $v2)
     {
-        $d3 = $d1 / ($d2 + $d1);
-        if ($d3 > 14)
+        $v3 = $v1 / ($v2 + $v1);
+        if ($v3 > 14)
         {
-            $d4 = 0;
-            for ($i = 0; $i < $d3; $i++)
+            $v4 = 0;
+            for ($i = 0; $i < $v3; $i++)
             {
-                $d4 += ($d2 * $i);
+                $v4 += ($v2 * $i);
             }
         }
-        $d5 = ($d4 < $d3 ? ($d3 - $d4) : ($d4 - $d3));
+        $v5 = ($v4 < $v3 ? ($v3 - $v4) : ($v4 - $v3));
 
-        $d6 = ($d1 * $d2 * $d3 * $d4 * $d5);
+        $v6 = ($v1 * $v2 * $v3 * $v4 * $v5);
 
-        $d = array($d1, $d2, $d3, $d4, $d5, $d6);
+        $v = array($v1, $v2, $v3, $v4, $v5, $v6);
 
-        $d7 = 1;
-        for ($i = 0; $i < $d6; $i++)
+        $v7 = 1;
+        for ($i = 0; $i < $v6; $i++)
         {
-            shuffle( $d );
-            $d7 = $d7 + $i * end($d);
+            shuffle( $v );
+            $v7 = $v7 + $i * end($v);
         }
 
-        $d8 = $d7;
-        foreach ( $d as $x )
+        $v8 = $v7;
+        foreach ( $v as $x )
         {
-            $d8 *= $x;
+            $v8 *= $x;
         }
 
-        $d3 = $d1 / ($d2 + $d1);
-        if ($d3 > 14)
+        $v3 = $v1 / ($v2 + $v1);
+        if ($v3 > 14)
         {
-            $d4 = 0;
-            for ($i = 0; $i < $d3; $i++)
+            $v4 = 0;
+            for ($i = 0; $i < $v3; $i++)
             {
-                $d4 += ($d2 * $i);
+                $v4 += ($v2 * $i);
             }
         }
-        $d5 = ($d4 < $d3 ? ($d3 - $d4) : ($d4 - $d3));
+        $v5 = ($v4 < $v3 ? ($v3 - $v4) : ($v4 - $v3));
 
-        $d6 = ($d1 * $d2 * $d3 * $d4 * $d5);
+        $v6 = ($v1 * $v2 * $v3 * $v4 * $v5);
 
-        $d = array($d1, $d2, $d3, $d4, $d5, $d6);
+        $v = array($v1, $v2, $v3, $v4, $v5, $v6);
 
-        $d7 = 1;
-        for ($i = 0; $i < $d6; $i++)
+        $v7 = 1;
+        for ($i = 0; $i < $v6; $i++)
         {
-            shuffle( $d );
-            $d7 = $d7 + $i * end($d);
+            shuffle( $v );
+            $v7 = $v7 + $i * end($v);
         }
 
-        $d8 = $d7;
-        foreach ( $d as $x )
+        $v8 = $v7;
+        foreach ( $v as $x )
         {
-            $d8 *= $x;
+            $v8 *= $x;
         }
 
-        return $d8;
+        return $v8;
     }
 
     /**
      * Simple copy for cpd detection.
      */
-    public function complex($d1, $d2)
+    public function complex($v1, $v2)
     {
-        $d3 = $d1 / ($d2 + $d1);
-        if ($d3 > 14)
+        $v3 = $v1 / ($v2 + $v1);
+        if ($v3 > 14)
         {
-            $d4 = 0;
-            for ($i = 0; $i < $d3; $i++)
+            $v4 = 0;
+            for ($i = 0; $i < $v3; $i++)
             {
-                $d4 += ($d2 * $i);
+                $v4 += ($v2 * $i);
             }
         }
-        $d5 = ($d4 < $d3 ? ($d3 - $d4) : ($d4 - $d3));
+        $v5 = ($v4 < $v3 ? ($v3 - $v4) : ($v4 - $v3));
 
-        $d6 = ($d1 * $d2 * $d3 * $d4 * $d5);
+        $v6 = ($v1 * $v2 * $v3 * $v4 * $v5);
 
-        $d = array($d1, $d2, $d3, $d4, $d5, $d6);
+        $v = array($v1, $v2, $v3, $v4, $v5, $v6);
 
-        $d7 = 1;
-        for ($i = 0; $i < $d6; $i++)
+        $v7 = 1;
+        for ($i = 0; $i < $v6; $i++)
         {
-            shuffle( $d );
-            $d7 = $d7 + $i * end( $d );
+            shuffle( $v );
+            $v7 = $v7 + $i * end( $v );
         }
 
-        $d8 = $d7;
-        foreach ( $d as $x )
+        $v8 = $v7;
+        foreach ( $v as $x )
         {
-            $d8 *= $x;
+            $v8 *= $x;
         }
 
-        $d3 = $d1 / ($d2 + $d1);
-        if ($d3 > 14)
+        $v3 = $v1 / ($v2 + $v1);
+        if ($v3 > 14)
         {
-            $d4 = 0;
-            for ($i = 0; $i < $d3; $i++)
+            $v4 = 0;
+            for ($i = 0; $i < $v3; $i++)
             {
-                $d4 += ($d2 * $i);
+                $v4 += ($v2 * $i);
             }
         }
-        $d5 = ($d4 < $d3 ? ($d3 - $d4) : ($d4 - $d3));
+        $v5 = ($v4 < $v3 ? ($v3 - $v4) : ($v4 - $v3));
 
-        $d6 = ($d1 * $d2 * $d3 * $d4 * $d5);
+        $v6 = ($v1 * $v2 * $v3 * $v4 * $v5);
 
-        $d = array($d1, $d2, $d3, $d4, $d5, $d6);
+        $v = array($v1, $v2, $v3, $v4, $v5, $v6);
 
-        $d7 = 1;
-        for ($i = 0; $i < $d6; $i++)
+        $v7 = 1;
+        for ($i = 0; $i < $v6; $i++)
         {
-            shuffle( $d );
-            $d7 = $d7 + $i * end($d);
+            shuffle( $v );
+            $v7 = $v7 + $i * end($v);
         }
 
-        $d8 = $d7;
-        foreach ( $d as $x )
+        $v8 = $v7;
+        foreach ( $v as $x )
         {
-            $d8 *= $x;
+            $v8 *= $x;
         }
 
-        return $d8;
+        return $v8;
     }
     
     public function div1($d1, $d2)
