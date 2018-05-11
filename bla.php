@@ -196,4 +196,49 @@ class PhpUnderControl_Example_Math
 
         return $v8;
     }
+    
+    public function div1($d1, $d2)
+    {
+        $d3 = $d1 / ($d2 + $d1);
+        if ($d3 > 14)
+        {
+            $d4 = 0;
+            for ($i = 0; $i < $d3; $i++)
+            {
+                $d4 += ($d2 * $i);
+            }
+        }
+
+        return $d4;
+    }
+    
+    public function div2($d1, $d2)
+    {
+        $d3 = $d1 / ($d2 + $d1);
+        if ($d3 > 14)
+        {
+            $d4 = 0;
+            for ($i = 0; $i < $d3; $i++)
+            {
+                $d4 += ($d2 * $i);
+            }
+        }
+
+        return $d4;
+    }
+    
+    public function div3($d1, $d2)
+    {
+        $d3 = $d1 / ($d2 + $d1);
+        if ($d3 > 14)
+        {
+            $d4 = 0;
+            for ($i = 0; $i < $d3; $i++)
+            {
+                $d4 += ($d2 * $i);
+            }
+        }
+
+        return $d4;
+    }
 }
